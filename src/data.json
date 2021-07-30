@@ -1,0 +1,852 @@
+{
+    "WMS_Capabilities": {
+       "Service": {
+          "Name": "EOSDA WMS",
+          "Title": "EOSDA",
+          "Abstract": "EOSDA",
+          "ContactInformation": {
+             "ContactPersonPrimary": {
+                "ContactOrganization": "EOSDA"
+             }
+          }
+       },
+       "Capability": {
+          "Request": {
+             "GetCapabilities": {
+                "Format": [
+                   "text/xml"
+                ],
+                "DCPType": {
+                   "HTTP": {
+                      "Get": {
+                         "OnlineResource": {
+                            "_xlink:href": "http://eos.com/landviewer/wms"
+                         }
+                      }
+                   }
+                }
+             },
+             "GetMap": {
+                "Format": [
+                   "image/jpeg",
+                   "image/png"
+                ],
+                "DCPType": {
+                   "HTTP": {
+                      "Get": {
+                         "OnlineResource": {
+                            "_xlink:href": "https://render.eosda.com/wms",
+                            "_xlink:type": "simple"
+                         }
+                      }
+                   }
+                }
+             }
+          },
+          "Exception": {
+             "Format": [
+                "XML",
+                "INIMAGE",
+                "BLANK"
+             ]
+          },
+          "UserDefinedSymbolization": {
+             "_InlineFeature": "0",
+             "_RemoteWCS": "0",
+             "_RemoteWFS": "0",
+             "_SupportSLD": "1",
+             "_UserLayer": "0",
+             "_UserStyle": "1"
+          },
+          "Layer": [
+             {
+                "Name": "Giza Governorate, Egypt",
+                "Title": "Giza Governorate, Egypt",
+                "CRS": "EPSG:3857",
+                "Layer": [
+                   {
+                      "Name": "S2-35-R-QM-2021-7-25-0+B04,B03,B02",
+                      "Title": "2021-07-25-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "29.03202594426481",
+                         "eastBoundLongitude": "30.176072771913837",
+                         "southBoundLatitude": "27.90120170188809",
+                         "northBoundLatitude": "28.912650958379142"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "30.176072771913837",
+                         "_maxy": "28.912650958379142",
+                         "_minx": "29.03202594426481",
+                         "_miny": "27.90120170188809"
+                      }
+                   },
+                   {
+                      "Name": "S2-35-R-PM-2021-7-25-0+B04,B03,B02",
+                      "Title": "2021-07-25-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "28.016416807759292",
+                         "eastBoundLongitude": "29.151884531812108",
+                         "southBoundLatitude": "27.9206531186831",
+                         "northBoundLatitude": "28.924365001907006"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "29.151884531812108",
+                         "_maxy": "28.924365001907006",
+                         "_minx": "28.016416807759292",
+                         "_miny": "27.9206531186831"
+                      }
+                   },
+                   {
+                      "Name": "L7-LE07_L1TP_177040_20210723_20210723_01_RT+B3,B2,B1",
+                      "Title": "2021-07-23-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "28.76747",
+                         "eastBoundLongitude": "31.1057",
+                         "southBoundLatitude": "27.93699",
+                         "northBoundLatitude": "29.82029"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "31.1057",
+                         "_maxy": "29.82029",
+                         "_minx": "28.76747",
+                         "_miny": "27.93699"
+                      }
+                   },
+                   {
+                      "Name": "L7-LE07_L1TP_177041_20210723_20210723_01_RT+B3,B2,B1",
+                      "Title": "2021-07-23-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "28.42338",
+                         "eastBoundLongitude": "30.72858",
+                         "southBoundLatitude": "26.49923",
+                         "northBoundLatitude": "28.38021"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "30.72858",
+                         "_maxy": "28.38021",
+                         "_minx": "28.42338",
+                         "_miny": "26.49923"
+                      }
+                   }
+                ]
+             },
+             {
+                "Name": "New Valley Governorate, Egypt",
+                "Title": "New Valley Governorate, Egypt",
+                "CRS": "EPSG:3857",
+                "Layer": [
+                   {
+                      "Name": "S2-36-Q-UL-2021-7-27-0+B04,B03,B02",
+                      "Title": "2021-07-27-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "31.041437486944766",
+                         "eastBoundLongitude": "31.7930135745168",
+                         "southBoundLatitude": "22.50695638266185",
+                         "northBoundLatitude": "23.50587015686781"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "31.7930135745168",
+                         "_maxy": "23.50587015686781",
+                         "_minx": "31.041437486944766",
+                         "_miny": "22.50695638266185"
+                      }
+                   },
+                   {
+                      "Name": "S2-36-Q-UL-2021-7-24-0+B04,B03,B02",
+                      "Title": "2021-07-24-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "31.127049602536744",
+                         "eastBoundLongitude": "32.12294987817567",
+                         "southBoundLatitude": "22.507802132629628",
+                         "northBoundLatitude": "23.50804119508661"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "32.12294987817567",
+                         "_maxy": "23.50804119508661",
+                         "_minx": "31.127049602536744",
+                         "_miny": "22.507802132629628"
+                      }
+                   },
+                   {
+                      "Name": "S2-36-Q-UL-2021-7-22-0+B04,B03,B02",
+                      "Title": "2021-07-22-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "31.041437486944766",
+                         "eastBoundLongitude": "31.797224330582583",
+                         "southBoundLatitude": "22.50695638266185",
+                         "northBoundLatitude": "23.50590273165656"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "31.797224330582583",
+                         "_maxy": "23.50590273165656",
+                         "_minx": "31.041437486944766",
+                         "_miny": "22.50695638266185"
+                      }
+                   },
+                   {
+                      "Name": "L7-LE07_L1TP_175044_20210725_20210726_01_RT+B3,B2,B1",
+                      "Title": "2021-07-25-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "30.51283",
+                         "eastBoundLongitude": "32.73223",
+                         "southBoundLatitude": "22.17966",
+                         "northBoundLatitude": "24.0531"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "32.73223",
+                         "_maxy": "24.0531",
+                         "_minx": "30.51283",
+                         "_miny": "22.17966"
+                      }
+                   }
+                ]
+             },
+             {
+                "Name": "Toshka Lakes",
+                "Title": "Toshka Lakes",
+                "CRS": "EPSG:3857"
+             },
+             {
+                "Name": "New Valley Governorate, Egypt",
+                "Title": "New Valley Governorate, Egypt",
+                "CRS": "EPSG:3857",
+                "Layer": [
+                   {
+                      "Name": "S2-35-R-NK-2021-7-25-0+B04,B03,B02",
+                      "Title": "2021-07-25-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "26.99980970612963",
+                         "eastBoundLongitude": "28.107592514164697",
+                         "southBoundLatitude": "26.12690347266134",
+                         "northBoundLatitude": "27.12230706669226"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "28.107592514164697",
+                         "_maxy": "27.12230706669226",
+                         "_minx": "26.99980970612963",
+                         "_miny": "26.12690347266134"
+                      }
+                   }
+                ]
+             },
+             {
+                "Name": "Specific  Area",
+                "Title": "Specific  Area",
+                "CRS": "EPSG:3857",
+                "Layer": [
+                   {
+                      "Name": "S2-36-Q-UL-2021-7-27-0+B04,B03,B02",
+                      "Title": "2021-07-27-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "31.041437486944766",
+                         "eastBoundLongitude": "31.7930135745168",
+                         "southBoundLatitude": "22.50695638266185",
+                         "northBoundLatitude": "23.50587015686781"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "31.7930135745168",
+                         "_maxy": "23.50587015686781",
+                         "_minx": "31.041437486944766",
+                         "_miny": "22.50695638266185"
+                      }
+                   },
+                   {
+                      "Name": "S2-36-Q-UL-2021-7-24-0+B04,B03,B02",
+                      "Title": "2021-07-24-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "31.127049602536744",
+                         "eastBoundLongitude": "32.12294987817567",
+                         "southBoundLatitude": "22.507802132629628",
+                         "northBoundLatitude": "23.50804119508661"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "32.12294987817567",
+                         "_maxy": "23.50804119508661",
+                         "_minx": "31.127049602536744",
+                         "_miny": "22.507802132629628"
+                      }
+                   },
+                   {
+                      "Name": "S2-36-Q-UL-2021-7-22-0+B04,B03,B02",
+                      "Title": "2021-07-22-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "31.041437486944766",
+                         "eastBoundLongitude": "31.797224330582583",
+                         "southBoundLatitude": "22.50695638266185",
+                         "northBoundLatitude": "23.50590273165656"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "31.797224330582583",
+                         "_maxy": "23.50590273165656",
+                         "_minx": "31.041437486944766",
+                         "_miny": "22.50695638266185"
+                      }
+                   },
+                   {
+                      "Name": "L7-LE07_L1TP_175044_20210725_20210726_01_RT+B3,B2,B1",
+                      "Title": "2021-07-25-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "30.51283",
+                         "eastBoundLongitude": "32.73223",
+                         "southBoundLatitude": "22.17966",
+                         "northBoundLatitude": "24.0531"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "32.73223",
+                         "_maxy": "24.0531",
+                         "_minx": "30.51283",
+                         "_miny": "22.17966"
+                      }
+                   }
+                ]
+             },
+             {
+                "Name": "o2",
+                "Title": "o2",
+                "CRS": "EPSG:3857",
+                "Layer": [
+                   {
+                      "Name": "S2-35-Q-PF-2021-7-27-0+B04,B03,B02",
+                      "Title": "2021-07-27-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "28.610425762275746",
+                         "eastBoundLongitude": "29.054485806191224",
+                         "southBoundLatitude": "22.50577843683772",
+                         "northBoundLatitude": "23.499627687645297"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "29.054485806191224",
+                         "_maxy": "23.499627687645297",
+                         "_minx": "28.610425762275746",
+                         "_miny": "22.50577843683772"
+                      }
+                   },
+                   {
+                      "Name": "S2-35-Q-PE-2021-7-27-0+B04,B03,B02",
+                      "Title": "2021-07-27-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "28.39914031977885",
+                         "eastBoundLongitude": "29.040829605267874",
+                         "southBoundLatitude": "21.60271870268263",
+                         "northBoundLatitude": "22.598742143658523"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "29.040829605267874",
+                         "_maxy": "22.598742143658523",
+                         "_minx": "28.39914031977885",
+                         "_miny": "21.60271870268263"
+                      }
+                   },
+                   {
+                      "Name": "S2-35-Q-PF-2021-7-25-0+B04,B03,B02",
+                      "Title": "2021-07-25-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "27.97232830709488",
+                         "eastBoundLongitude": "29.054485806191224",
+                         "southBoundLatitude": "22.506009050354937",
+                         "northBoundLatitude": "23.507467190127603"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "29.054485806191224",
+                         "_maxy": "23.507467190127603",
+                         "_minx": "27.97232830709488",
+                         "_miny": "22.506009050354937"
+                      }
+                   },
+                   {
+                      "Name": "S2-35-Q-PE-2021-7-25-0+B04,B03,B02",
+                      "Title": "2021-07-25-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "27.966168173892154",
+                         "eastBoundLongitude": "29.040829605267874",
+                         "southBoundLatitude": "21.60544548190156",
+                         "northBoundLatitude": "22.60408006266691"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "29.040829605267874",
+                         "_maxy": "22.60408006266691",
+                         "_minx": "27.966168173892154",
+                         "_miny": "21.60544548190156"
+                      }
+                   },
+                   {
+                      "Name": "S2-35-Q-PF-2021-7-22-0+B04,B03,B02",
+                      "Title": "2021-07-22-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "28.616062909794014",
+                         "eastBoundLongitude": "29.054485806191224",
+                         "southBoundLatitude": "22.50577843683772",
+                         "northBoundLatitude": "23.49956267827324"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "29.054485806191224",
+                         "_maxy": "23.49956267827324",
+                         "_minx": "28.616062909794014",
+                         "_miny": "22.50577843683772"
+                      }
+                   },
+                   {
+                      "Name": "S2-35-Q-PE-2021-7-22-0+B04,B03,B02",
+                      "Title": "2021-07-22-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "28.404549252724294",
+                         "eastBoundLongitude": "29.040829605267874",
+                         "southBoundLatitude": "21.60271870268263",
+                         "northBoundLatitude": "22.5986867158646"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "29.040829605267874",
+                         "_maxy": "22.5986867158646",
+                         "_minx": "28.404549252724294",
+                         "_miny": "21.60271870268263"
+                      }
+                   },
+                   {
+                      "Name": "L7-LE07_L1TP_177044_20210723_20210723_01_RT+B3,B2,B1",
+                      "Title": "2021-07-23-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "27.42227",
+                         "eastBoundLongitude": "29.64194",
+                         "southBoundLatitude": "22.18138",
+                         "northBoundLatitude": "24.0549"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "29.64194",
+                         "_maxy": "24.0549",
+                         "_minx": "27.42227",
+                         "_miny": "22.18138"
+                      }
+                   },
+                   {
+                      "Name": "L7-LE07_L1TP_177045_20210723_20210723_01_RT+B3,B2,B1",
+                      "Title": "2021-07-23-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "27.09768",
+                         "eastBoundLongitude": "29.29259",
+                         "southBoundLatitude": "20.74026",
+                         "northBoundLatitude": "22.61215"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "29.29259",
+                         "_maxy": "22.61215",
+                         "_minx": "27.09768",
+                         "_miny": "20.74026"
+                      }
+                   }
+                ]
+             },
+             {
+                "Name": "Owainat",
+                "Title": "Owainat",
+                "CRS": "EPSG:3857",
+                "Layer": [
+                   {
+                      "Name": "S2-35-Q-PF-2021-7-27-0+B04,B03,B02",
+                      "Title": "2021-07-27-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "28.610425762275746",
+                         "eastBoundLongitude": "29.054485806191224",
+                         "southBoundLatitude": "22.50577843683772",
+                         "northBoundLatitude": "23.499627687645297"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "29.054485806191224",
+                         "_maxy": "23.499627687645297",
+                         "_minx": "28.610425762275746",
+                         "_miny": "22.50577843683772"
+                      }
+                   },
+                   {
+                      "Name": "S2-35-Q-QF-2021-7-27-0+B04,B03,B02",
+                      "Title": "2021-07-27-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "28.943935837246332",
+                         "eastBoundLongitude": "30.032465849347812",
+                         "southBoundLatitude": "22.490554899481147",
+                         "northBoundLatitude": "23.498237025902313"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "30.032465849347812",
+                         "_maxy": "23.498237025902313",
+                         "_minx": "28.943935837246332",
+                         "_miny": "22.490554899481147"
+                      }
+                   },
+                   {
+                      "Name": "S2-35-Q-QE-2021-7-27-0+B04,B03,B02",
+                      "Title": "2021-07-27-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "28.93162715589592",
+                         "eastBoundLongitude": "30.0123291614648",
+                         "southBoundLatitude": "21.588167138730203",
+                         "northBoundLatitude": "22.595243735184674"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "30.0123291614648",
+                         "_maxy": "22.595243735184674",
+                         "_minx": "28.93162715589592",
+                         "_miny": "21.588167138730203"
+                      }
+                   },
+                   {
+                      "Name": "S2-35-Q-PE-2021-7-27-0+B04,B03,B02",
+                      "Title": "2021-07-27-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "28.39914031977885",
+                         "eastBoundLongitude": "29.040829605267874",
+                         "southBoundLatitude": "21.60271870268263",
+                         "northBoundLatitude": "22.598742143658523"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "29.040829605267874",
+                         "_maxy": "22.598742143658523",
+                         "_minx": "28.39914031977885",
+                         "_miny": "21.60271870268263"
+                      }
+                   },
+                   {
+                      "Name": "S2-35-Q-QF-2021-7-25-0+B04,B03,B02",
+                      "Title": "2021-07-25-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "28.943935837246332",
+                         "eastBoundLongitude": "29.277111748001655",
+                         "southBoundLatitude": "22.50600904777619",
+                         "northBoundLatitude": "23.498237025902313"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "29.277111748001655",
+                         "_maxy": "23.498237025902313",
+                         "_minx": "28.943935837246332",
+                         "_miny": "22.50600904777619"
+                      }
+                   },
+                   {
+                      "Name": "S2-35-Q-QE-2021-7-25-0+B04,B03,B02",
+                      "Title": "2021-07-25-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "28.94063909464406",
+                         "eastBoundLongitude": "29.043914144588893",
+                         "southBoundLatitude": "22.192259859136247",
+                         "northBoundLatitude": "22.595231950529744"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "29.043914144588893",
+                         "_maxy": "22.595231950529744",
+                         "_minx": "28.94063909464406",
+                         "_miny": "22.192259859136247"
+                      }
+                   },
+                   {
+                      "Name": "S2-35-Q-NF-2021-7-25-0+B04,B03,B02",
+                      "Title": "2021-07-25-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "26.99981389344379",
+                         "eastBoundLongitude": "28.07522083680338",
+                         "southBoundLatitude": "22.515156866422828",
+                         "northBoundLatitude": "23.51054699653549"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "28.07522083680338",
+                         "_maxy": "23.51054699653549",
+                         "_minx": "26.99981389344379",
+                         "_miny": "22.515156866422828"
+                      }
+                   },
+                   {
+                      "Name": "S2-35-Q-PF-2021-7-25-0+B04,B03,B02",
+                      "Title": "2021-07-25-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "27.97232830709488",
+                         "eastBoundLongitude": "29.054485806191224",
+                         "southBoundLatitude": "22.506009050354937",
+                         "northBoundLatitude": "23.507467190127603"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "29.054485806191224",
+                         "_maxy": "23.507467190127603",
+                         "_minx": "27.97232830709488",
+                         "_miny": "22.506009050354937"
+                      }
+                   },
+                   {
+                      "Name": "S2-35-Q-PE-2021-7-25-0+B04,B03,B02",
+                      "Title": "2021-07-25-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "27.966168173892154",
+                         "eastBoundLongitude": "29.040829605267874",
+                         "southBoundLatitude": "21.60544548190156",
+                         "northBoundLatitude": "22.60408006266691"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "29.040829605267874",
+                         "_maxy": "22.60408006266691",
+                         "_minx": "27.966168173892154",
+                         "_miny": "21.60544548190156"
+                      }
+                   },
+                   {
+                      "Name": "S2-35-Q-NE-2021-7-25-0+B04,B03,B02",
+                      "Title": "2021-07-25-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "26.999815131547546",
+                         "eastBoundLongitude": "28.068069420010662",
+                         "southBoundLatitude": "21.61168309749351",
+                         "northBoundLatitude": "22.607028447335185"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "28.068069420010662",
+                         "_maxy": "22.607028447335185",
+                         "_minx": "26.999815131547546",
+                         "_miny": "21.61168309749351"
+                      }
+                   },
+                   {
+                      "Name": "S2-35-Q-PF-2021-7-22-0+B04,B03,B02",
+                      "Title": "2021-07-22-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "28.616062909794014",
+                         "eastBoundLongitude": "29.054485806191224",
+                         "southBoundLatitude": "22.50577843683772",
+                         "northBoundLatitude": "23.49956267827324"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "29.054485806191224",
+                         "_maxy": "23.49956267827324",
+                         "_minx": "28.616062909794014",
+                         "_miny": "22.50577843683772"
+                      }
+                   },
+                   {
+                      "Name": "S2-35-Q-QF-2021-7-22-0+B04,B03,B02",
+                      "Title": "2021-07-22-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "28.943935837246332",
+                         "eastBoundLongitude": "30.032465849347812",
+                         "southBoundLatitude": "22.490554899481147",
+                         "northBoundLatitude": "23.498237025902313"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "30.032465849347812",
+                         "_maxy": "23.498237025902313",
+                         "_minx": "28.943935837246332",
+                         "_miny": "22.490554899481147"
+                      }
+                   },
+                   {
+                      "Name": "S2-35-Q-QE-2021-7-22-0+B04,B03,B02",
+                      "Title": "2021-07-22-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "28.93162715589592",
+                         "eastBoundLongitude": "30.0123291614648",
+                         "southBoundLatitude": "21.588167138730203",
+                         "northBoundLatitude": "22.595243735184674"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "30.0123291614648",
+                         "_maxy": "22.595243735184674",
+                         "_minx": "28.93162715589592",
+                         "_miny": "21.588167138730203"
+                      }
+                   },
+                   {
+                      "Name": "S2-35-Q-PE-2021-7-22-0+B04,B03,B02",
+                      "Title": "2021-07-22-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "28.404549252724294",
+                         "eastBoundLongitude": "29.040829605267874",
+                         "southBoundLatitude": "21.60271870268263",
+                         "northBoundLatitude": "22.5986867158646"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "29.040829605267874",
+                         "_maxy": "22.5986867158646",
+                         "_minx": "28.404549252724294",
+                         "_miny": "21.60271870268263"
+                      }
+                   },
+                   {
+                      "Name": "S2-35-Q-NE-2021-7-20-0+B04,B03,B02",
+                      "Title": "2021-07-20-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "26.999815131547546",
+                         "eastBoundLongitude": "28.068069420010662",
+                         "southBoundLatitude": "21.61168309749351",
+                         "northBoundLatitude": "22.607028447335185"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "28.068069420010662",
+                         "_maxy": "22.607028447335185",
+                         "_minx": "26.999815131547546",
+                         "_miny": "21.61168309749351"
+                      }
+                   },
+                   {
+                      "Name": "S2-35-Q-NF-2021-7-20-0+B04,B03,B02",
+                      "Title": "2021-07-20-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "26.99981389344379",
+                         "eastBoundLongitude": "28.07522083680338",
+                         "southBoundLatitude": "22.515156866422828",
+                         "northBoundLatitude": "23.51054699653549"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "28.07522083680338",
+                         "_maxy": "23.51054699653549",
+                         "_minx": "26.99981389344379",
+                         "_miny": "22.515156866422828"
+                      }
+                   },
+                   {
+                      "Name": "S2-35-Q-PE-2021-7-20-0+B04,B03,B02",
+                      "Title": "2021-07-20-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "27.966168173892154",
+                         "eastBoundLongitude": "29.03885819209544",
+                         "southBoundLatitude": "21.605480748345894",
+                         "northBoundLatitude": "22.60408006266691"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "29.03885819209544",
+                         "_maxy": "22.60408006266691",
+                         "_minx": "27.966168173892154",
+                         "_miny": "21.605480748345894"
+                      }
+                   },
+                   {
+                      "Name": "S2-35-Q-PF-2021-7-20-0+B04,B03,B02",
+                      "Title": "2021-07-20-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "27.97232830709488",
+                         "eastBoundLongitude": "29.054485806191224",
+                         "southBoundLatitude": "22.506072393107328",
+                         "northBoundLatitude": "23.507467190127603"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "29.054485806191224",
+                         "_maxy": "23.507467190127603",
+                         "_minx": "27.97232830709488",
+                         "_miny": "22.506072393107328"
+                      }
+                   },
+                   {
+                      "Name": "L7-LE07_L1TP_177044_20210723_20210723_01_RT+B3,B2,B1",
+                      "Title": "2021-07-23-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "27.42227",
+                         "eastBoundLongitude": "29.64194",
+                         "southBoundLatitude": "22.18138",
+                         "northBoundLatitude": "24.0549"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "29.64194",
+                         "_maxy": "24.0549",
+                         "_minx": "27.42227",
+                         "_miny": "22.18138"
+                      }
+                   },
+                   {
+                      "Name": "L7-LE07_L1TP_177045_20210723_20210723_01_RT+B3,B2,B1",
+                      "Title": "2021-07-23-Natural Color",
+                      "CRS": "EPSG:3857",
+                      "EX_GeographicBoundingBox": {
+                         "westBoundLongitude": "27.09768",
+                         "eastBoundLongitude": "29.29259",
+                         "southBoundLatitude": "20.74026",
+                         "northBoundLatitude": "22.61215"
+                      },
+                      "BoundingBox": {
+                         "_epsg": "EPSG:4326",
+                         "_maxx": "29.29259",
+                         "_maxy": "22.61215",
+                         "_minx": "27.09768",
+                         "_miny": "20.74026"
+                      }
+                   }
+                ]
+             }
+          ]
+       },
+       "_xmlns:xlink": "http://www.w3.org/1999/xlink",
+       "_version": "1.3.0"
+    }
+ }

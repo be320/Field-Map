@@ -6,7 +6,7 @@ import './Container.css'
 const Container = () => {
     return(
         <div id="container-main">
-        <Dashboard />
+        {/* <Dashboard /> */}
         <MapUI />
         </div>
     )
