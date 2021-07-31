@@ -22,12 +22,17 @@ const Dashboard = props => {
           <div className="dash-details">
             xCenter: {props.regionSelected.xCenter}
           </div>{" "}
-          <div className="dash-details">yCenter: {props.regionSelected.yCenter}</div>{" "}
-          <div className="dash-details">radius: {props.regionSelected.radius}</div>{" "}
+          <div className="dash-details">
+            yCenter: {props.regionSelected.yCenter}
+          </div>{" "}
+          <div className="dash-details">
+            radius: {props.regionSelected.radius}
+          </div>{" "}
           <div className="dash-details">days:</div>
-          {props.regionSelected.days &&  props.regionSelected.days.map((day)=>(
-            <div className="dash-details">{day}</div>
-          ))}
+          {props.regionSelected.days &&
+            props.regionSelected.days.map(day => (
+              <div className="dash-details">{day}</div>
+            ))}
         </div>
       </div>
     </div>
