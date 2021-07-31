@@ -1,11 +1,12 @@
 import React from 'react'
 import './Dashboard.css'
 
-const Dashboard = () => {
+const Dashboard = (props) => {
+
 
     return(
         <div id="dashboard-main">
-DASH
+            <button onClick={props.maximizeMap} >Close</button>
         </div>
     )
 

@@ -6,16 +6,15 @@ import ZoomSlider from '../components/ZoomSlider'
 import * as turf from "@turf/turf";
 var convert = require("xml-js");
 
-const MapUI = () => {
+const MapUI = (props) => {
 
-  const [mapWidth,setMapWidth] = useState('100%')
 
   useEffect(() => {
     initMap();
   }, []);
   
 
-  const initMap = async () => {
+  const initMap = () => {
     var data = {};
     var layers = [];
 
@@ -96,15 +95,16 @@ const MapUI = () => {
 
 
         L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-          minZoom: 0,
-          maxZoom: 19,
+          minZoom: 6,
+          maxZoom: 13,
           zoomControl: false ,
           attribution:
             'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
             'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
           id: "mapbox/streets-v11",
           tileSize: 512,
-          zoomOffset: -1
+          zoomOffset: -1,
+          
         }).addTo(map);
 
         regions.map(region => {
@@ -127,7 +127,7 @@ const MapUI = () => {
             fillOpacity: 0.3
           }).addTo(map).on('click',function(e) {
             setTimeout(function(){ map.invalidateSize()}, 400);
-            setMapWidth('30%')
+            props.minimizeMap()
             map.fitBounds(circle.getBounds(),{
               padding: [30,30]
             });
@@ -136,13 +136,12 @@ const MapUI = () => {
           }).bindPopup('<h1>'+region["name"]+'</h1>');
 
         });
-
-
+        props.handleMap(map)
       });
   };
 
   return(
-    <div id="mapid" style={{width: mapWidth}} ></div>
+    <div id="mapid" style={{width: props.mapWidth}} ></div>
     );
 };
 
