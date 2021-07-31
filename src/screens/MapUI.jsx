@@ -67,6 +67,7 @@ const MapUI = (props) => {
               radius: distance,
               days: days
             });
+            days = []
           }
         });
 
@@ -132,7 +133,8 @@ const MapUI = (props) => {
               padding: [30,30]
             });
             map.panTo(new L.LatLng(region["yCenter"], region["xCenter"]));
-            console.log(map.getZoom())
+            props.handleRegion(region)
+
           }).bindPopup('<h1>'+region["name"]+'</h1>');
 
         });

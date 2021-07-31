@@ -6,9 +6,10 @@ import ZoomSlider from '../components/ZoomSlider'
 
 const Container = () => {
 
-    const [mapWidth,setMapWidth] = useState('30%')
-    const [boardWidth,setBoardWidth] = useState('70%')
+    const [mapWidth,setMapWidth] = useState('100%')
+    const [boardWidth,setBoardWidth] = useState('0%')
     const [myMap,setMyMap] = useState('')
+    const [regionSelected, setRegionSelected] = useState('')
 
     const changeZoom = (event, value) => {
         if(myMap !== '')
@@ -24,17 +25,25 @@ const Container = () => {
         setMapWidth('100%')
         setBoardWidth('0%')
         setTimeout(function(){ myMap.invalidateSize()}, 400);
+        if(regionSelected !== '')
+            console.log(regionSelected)
     }
 
     const handleMap = (value) =>{
         setMyMap(value)
     }
 
+    const handleRegion = (value) => {
+        setRegionSelected(value)
+    }
+
+
+
     return(
         <div id="container-main">
-        <Dashboard boardWidth = {boardWidth} maximizeMap = {maximizeMap} />
-        <ZoomSlider changeZoom = {changeZoom} />
-        <MapUI handleMap = {handleMap} mapWidth = {mapWidth} minimizeMap = {minimizeMap} />
+{  (myMap !== '')  &&    <Dashboard boardWidth = {boardWidth} maximizeMap = {maximizeMap} regionSelected = {regionSelected} />}
+        { (myMap !== '')  && <ZoomSlider changeZoom = {changeZoom} />}
+        <MapUI handleMap = {handleMap} mapWidth = {mapWidth} minimizeMap = {minimizeMap} handleRegion = {handleRegion}  />
         </div>
     )
 
