@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./MapUI.css";
 import L from "leaflet";
 import axios from "axios";
-import geoJSON from "../data";
+import ZoomSlider from '../components/ZoomSlider'
 import * as turf from "@turf/turf";
 var convert = require("xml-js");
 
@@ -13,6 +13,7 @@ const MapUI = () => {
   useEffect(() => {
     initMap();
   }, []);
+  
 
   const initMap = async () => {
     var data = {};
@@ -95,7 +96,9 @@ const MapUI = () => {
 
 
         L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          minZoom: 0,
           maxZoom: 19,
+          zoomControl: false ,
           attribution:
             'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
             'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -123,13 +126,13 @@ const MapUI = () => {
             color: 'white',
             fillOpacity: 0.3
           }).addTo(map).on('click',function(e) {
-            // map.setView(e.latlng,10);
             setTimeout(function(){ map.invalidateSize()}, 400);
             setMapWidth('30%')
             map.fitBounds(circle.getBounds(),{
               padding: [30,30]
             });
             map.panTo(new L.LatLng(region["yCenter"], region["xCenter"]));
+            console.log(map.getZoom())
           }).bindPopup('<h1>'+region["name"]+'</h1>');
 
         });
@@ -138,7 +141,9 @@ const MapUI = () => {
       });
   };
 
-  return <div id="mapid" style={{width: mapWidth}} ></div>;
+  return(
+    <div id="mapid" style={{width: mapWidth}} ></div>
+    );
 };
 
 export default MapUI;
